@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Highlights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+        }
+        header {
+            grid-column: 1 / 4;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            grid-column: 2;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .left-pane, .right-pane {
+            background-color: #ddd;
+            padding: 10px;
+            margin: 20px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wedding Highlights</h1>
+    </header>
+    <div class="left-pane">
+        <h3>Options</h3>
+        <ul>
+            <li><a href="#video">Watch Video</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#guestbook">Guestbook</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2 id="video">Our Special Day</h2>
+        <p>Celebrate with us as we share some of the most memorable moments from our wedding day.</p>
+        <video controls>
+            <source src="your_video_file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2 id="gallery">Photo Gallery</h2>
+        <img src="photo1.jpg" alt="Wedding Photo 1" style="width:100%;margin-bottom:10px;">
+        <img src="photo2.jpg" alt="Wedding Photo 2" style="width:100%;margin-bottom:10px;">
+        <img src="photo3.jpg" alt="Wedding Photo 3" style="width:100%;">
+    </div>
+    <div class="right-pane">
+        <h3>Additional Information</h3>
+        <p>Feel free to leave your thoughts and wishes for us in the guestbook!</p>
+        <a href="#guestbook">Sign Guestbook</a>
+    </div>
+</body>
+</html>
